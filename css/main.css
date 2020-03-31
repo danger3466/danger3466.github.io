@@ -78,6 +78,14 @@ li {
     grid-row-start: 4;
 }
 
+.works h3 {
+    margin-top: 50px;
+}
+
+.works h3 span {
+    color: rgba(0, 0, 0, 0.5);
+}
+
 @media screen and (max-width: 1200px), print {
     .grid-container {
         display: grid;
