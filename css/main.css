@@ -1,0 +1,95 @@
+@font-face {
+    font-family: JetBrainsMono;
+    src: url(fonts/JetBrainsMono-Medium.woff2);
+}
+
+body {
+    background-color: #f1f1f1;
+    margin: 0;
+    font-family: JetBrainsMono, Mono;
+}
+
+a { color: #461d8b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+h1 {
+    font-size: 50px;
+    font-weight: 100;
+    margin: 0px 30px;
+    text-shadow: 0 1px 0 #fff;
+}
+
+h2 {
+    color: #461d8b;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-bottom: 3px solid #461d8b;
+}
+
+h3 {
+    color: #461d8b;
+    margin: 0px 60px;
+}
+
+p {
+    margin: 0px 60px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    margin-left: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+.contacts a {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 400px;
+}
+
+.grid-container p {
+    margin-bottom: 20px;
+}
+
+.grid-container li {
+    display: inline;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.skils {
+    grid-row-start: 3;
+}
+
+.life {
+}
+
+.works {
+    grid-row-start: 4;
+}
+
+@media screen and (max-width: 1200px), print {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .life {
+        grid-row-start: 5;
+        grid-column-start: 1;
+    }
+}
+
+@media print {
+    h1 { font-size: 30px; }
+}
